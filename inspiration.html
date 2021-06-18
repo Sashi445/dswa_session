@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animation - Inspiration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <h1 class="text-center text-white">SVG Animations - Inspiration</h1>
+    </header>
+    <main>
+        <div class="extra-space"></div>
+        <div class="container">
+            <ul id="anchorList" class="list-group">
+            </ul>
+        </div>
+        <div class="extra-space"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const links = [
+            "https://codepen.io/wikyware-net/pen/YzZjqyZ?editors=1100",
+            "https://codepen.io/balarohankotni/pen/XWMqpaY?editors=1010",
+            "https://codepen.io/Divyathalishajahan/pen/vYXaQVV?editors=1000",
+            "https://codepen.io/aryan-aditya/pen/xxVLrBa",
+            "https://codepen.io/isladjan/pen/abdyPBw",
+            "https://codepen.io/harish525/pen/eYmeErm",
+            "https://codepen.io/ksenia-k/pen/QWwyywR",
+            "https://codepen.io/Souleste/pen/QWLxPPr",
+            "https://codepen.io/iNeedAdult/pen/rEGvXP",
+            "https://codepen.io/ruhantai/pen/LawJxa",
+            "https://codepen.io/ksenia-k/pen/zbgooY",
+            "https://codepen.io/airnan/pen/bmvegP?editors=1000",
+            "https://codepen.io/airnan/pen/JmOqbN?editors=1010",
+            "https://codepen.io/cassie-codes/pen/vYXvVYV",
+            "https://codepen.io/cassie-codes/pen/jKaVqo",
+        ]
+
+        const linksContainer = document.querySelector('#anchorList');
+
+        window.onload = function(){
+            const linkElements = links.map((item) => {
+                linksContainer.innerHTML = "";
+                links.forEach((item, index) => {
+                    linksContainer.innerHTML += `
+                        <li class="list-group-item">
+                            <a href=${item} target="_blank">${index+1} . ${item}</a>
+                        </li>
+                    `;
+                })
+            })
+        }
+
+//         <ul class="list-group">
+//   <li class="list-group-item">An item</li>
+//   <li class="list-group-item">A second item</li>
+//   <li class="list-group-item">A third item</li>
+//   <li class="list-group-item">A fourth item</li>
+//   <li class="list-group-item">And a fifth one</li>
+// </ul>
+    </script>
+</body>
+
+</html>
